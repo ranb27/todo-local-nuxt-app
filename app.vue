@@ -28,8 +28,8 @@
         </button>
       </div>
 
-      <div class="card">
-        <div class="card-body">
+      <div class="card h-[75vh]">
+        <div class="overflow-scroll">
           <form @submit.prevent="addNewTodo" class="flex gap-2 mb-4">
             <input
               v-model="newTodoText"
@@ -54,7 +54,6 @@
               </svg>
             </button>
           </form>
-
           <div
             v-if="todos.length === 0"
             class="text-center py-4 text-base-content/70"
